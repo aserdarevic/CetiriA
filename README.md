@@ -8,7 +8,7 @@ Opis temea
 
 Aplikacija je namijenjena policijskim službenicima kao alat za pretraživanje osoba sa kriminalnim dosijeima kao i pojedinaca koji nemaju kriminalni dosije, èime imaju moguænost da u svakom trenutku za kratko vrijeme imaju informacije o pojedincima. Takodjer ovlaštene osobe u sistem mogu unositi i nove profile tj. poèinioce novih kriviènih dijela. Aplikacija u sebi sadrži jedan sistem bodovanja pojedinaca, na osnovu kojeg æe poèinioci kriviènih dijela biti rangirani. Ukoliko pojedinac koji je veæ ranije kažnjavan, ne poèini neko krivièno djelo u odreðenom periodu, on æe biti stimuliran adekvatnom nagradom u vidu plakete, novèane nagrade od strane policijske uprave i sl. Takoðer ovoj aplikaciji mogu pristupiti i pojedinci koji imaju moguænost uvida u profile pojedinaca, tako da bi ova aplikacija imala veliku socialno-psihološku ulogu. Sigurni smo da se ne bi željeli naæi na stubu srama ovog grada. Zato se potrudite da živite jedan odgovoran i zakonski ureðen život. Takoðer aplikacija omoguæava komesaru tj. nareðenoj osobi da prati rad svojih uposlenika inspektora, policajaca i ostalih službenika, te stanje na terenu, èime se poveæava efikasnost i razmijena podatak meðu istim.
 
-Procesi
+Procesiaa
 
 Registracija policijskih službenika: U samoj strukturi policijske uprave imamo jedan vid hijerarhije. Na èelu svake policijske stanice nalazi se komesar. On kao pojedinac ima uvid u gotovo sve podatke sistema. Može uzimati podatke o civilnim licima, a i pratiti rad svojih podreðenih policajaca i inspektora. Registovat se mogu policajac, inspektor i komesar kao službenici, dok pojedinac se može registrovati s ciljem dobijanja odreðenih informacija.
 
