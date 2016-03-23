@@ -1,5 +1,5 @@
-Univerzitet u Sarajevu
-Elektortehnièki fakultet
+**Univerzitet u Sarajevu
+Elektortehnièki fakultet**
 
 Objektno orijentisna analiza i dizajn
 Projekat: Policijska stanica
