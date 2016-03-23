@@ -48,6 +48,3 @@ Akteri
 •	Administrator
 •	Vlada
 
-
-
-
