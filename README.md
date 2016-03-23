@@ -47,4 +47,3 @@ Akteri
 •	Pravno lice (Pojedinac)
 •	Administrator
 •	Vlada
-
