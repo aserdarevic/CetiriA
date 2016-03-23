@@ -18,19 +18,19 @@ Aplikacija je namijenjena policijskim službenicima kao alat za pretraživanje oso
 
 **Procesi**
 
-*Registracija policijskih službenika: U samoj strukturi policijske uprave imamo jedan vid hijerarhije. Na èelu svake policijske stanice nalazi se komesar. On kao pojedinac ima uvid u gotovo sve podatke sistema. Može uzimati podatke o civilnim licima, a i pratiti rad svojih podreðenih policajaca i inspektora. Registovat se mogu policajac, inspektor i komesar kao službenici, dok pojedinac se može registrovati s ciljem dobijanja odreðenih informacija.
+* Registracija policijskih službenika: U samoj strukturi policijske uprave imamo jedan vid hijerarhije. Na èelu svake policijske stanice nalazi se komesar. On kao pojedinac ima uvid u gotovo sve podatke sistema. Može uzimati podatke o civilnim licima, a i pratiti rad svojih podreðenih policajaca i inspektora. Registovat se mogu policajac, inspektor i komesar kao službenici, dok pojedinac se može registrovati s ciljem dobijanja odreðenih informacija.
 
-*Unos prekršaja: Policijski službenik može unijeti novonastali prekršaj kao i informacije o pojedincu koji je poèinio prekršaj, pri tome uzimajuæi kao identifikacijsko sredstvo otisak prsta poèinioca. Takoðer prilikom unosa podataka o djelu, vrši se precizno evidentiranje kriviènog djela, tj. sva krivièna djela se moraju precizno unijeti kako bi se vršila raspodjela na lahka, teška, kraðe, otmice i sl.
+* Unos prekršaja: Policijski službenik može unijeti novonastali prekršaj kao i informacije o pojedincu koji je poèinio prekršaj, pri tome uzimajuæi kao identifikacijsko sredstvo otisak prsta poèinioca. Takoðer prilikom unosa podataka o djelu, vrši se precizno evidentiranje kriviènog djela, tj. sva krivièna djela se moraju precizno unijeti kako bi se vršila raspodjela na lahka, teška, kraðe, otmice i sl.
 
-*Pretraživanje informacija: Pojedinac bilo policijski službenik bilo obièan graðanin ima moguænost pretraživanja sistema. Meðutim bitno se razlikuje stepen informacija koje pojedinac može dobiti. Npr. Službenik ima uvid u cijelokupne informacije o pojedincu, dok osoba tj. pravno lice može dobiti dio informacija ukljuèujuæi informacije o kaznenom dijelu. Razlika je u tome što liène informacije ne mogu biti u potpunosti javne. 
+* Pretraživanje informacija: Pojedinac bilo policijski službenik bilo obièan graðanin ima moguænost pretraživanja sistema. Meðutim bitno se razlikuje stepen informacija koje pojedinac može dobiti. Npr. Službenik ima uvid u cijelokupne informacije o pojedincu, dok osoba tj. pravno lice može dobiti dio informacija ukljuèujuæi informacije o kaznenom dijelu. Razlika je u tome što liène informacije ne mogu biti u potpunosti javne. 
 
-*Manipulisanje informacijama: Inspektor ima moguænost uklanjanja pojedinaca iz baze podataka, kao i pohvaljivanje i afirmaciju kažnjenika u vidu njihovog društvenog i socijalnog napretka. Pojedinci koji se ne vrate èinjenju prekršaja brišu se iz baze podataka. Takoðer on odreðuje koji podaci æe biti javni a koji ne, kako bi sprijeèio kompromitovanje istrage ili pojedinca.
+* Manipulisanje informacijama: Inspektor ima moguænost uklanjanja pojedinaca iz baze podataka, kao i pohvaljivanje i afirmaciju kažnjenika u vidu njihovog društvenog i socijalnog napretka. Pojedinci koji se ne vrate èinjenju prekršaja brišu se iz baze podataka. Takoðer on odreðuje koji podaci æe biti javni a koji ne, kako bi sprijeèio kompromitovanje istrage ili pojedinca.
 
-*Unos podataka službenika: Ovaj unos vrši administrator uz prethodno odobrenje komesara. Administrator vrši unos podataka, održavanje podataka, te brisanje podataka, naravno to radi uz odobrenje komesara. Kako bi sprijeèili manipulaciju ovim sistemom, administrator mora dobiti potvrdu za brisanje podataka o službenicima od Vlade, ili o unosu podataka novih službenika.
+* Unos podataka službenika: Ovaj unos vrši administrator uz prethodno odobrenje komesara. Administrator vrši unos podataka, održavanje podataka, te brisanje podataka, naravno to radi uz odobrenje komesara. Kako bi sprijeèili manipulaciju ovim sistemom, administrator mora dobiti potvrdu za brisanje podataka o službenicima od Vlade, ili o unosu podataka novih službenika.
 
-*Žalbe: Pojedinci koji su zavedeni u bazu podataka imaju pravo javne žalbe, i to u samoj aplikaciji u vidu komentara. Upravljanje tim dijelom je onemoguæeno bilo kome, te se time sprijeèava malverzacija policijskih službenika. Meðutim, kako bi sprijeèili malverzaciju i pojedinaca, neophodno je da za postavljanje žalbe, pojedinac potvrdi svoj identitet pomoæu otiska prsta.
+* Žalbe: Pojedinci koji su zavedeni u bazu podataka imaju pravo javne žalbe, i to u samoj aplikaciji u vidu komentara. Upravljanje tim dijelom je onemoguæeno bilo kome, te se time sprijeèava malverzacija policijskih službenika. Meðutim, kako bi sprijeèili malverzaciju i pojedinaca, neophodno je da za postavljanje žalbe, pojedinac potvrdi svoj identitet pomoæu otiska prsta.
 
-*Top lista: Svake godine se vrši selekcija pojedinaca koji nisu izvršili nijedan prekršaj u protekloj godini. Oni se zbog svog truda adekvatno nagraðuju, te brišu iz baze podataka.
+* Top lista: Svake godine se vrši selekcija pojedinaca koji nisu izvršili nijedan prekršaj u protekloj godini. Oni se zbog svog truda adekvatno nagraðuju, te brišu iz baze podataka.
 
 **Funkcionalnosti**
 
