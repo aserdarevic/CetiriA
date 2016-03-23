@@ -2,14 +2,15 @@
 Elektortehnièki fakultet**
 
 Objektno orijentisna analiza i dizajn
+
 Projekat: Policijska stanica
 
 Ime tima: CetiriA
 Èlanovi tima:
-•	Kusur Alija
-•	Loziæ Anes
-•	Lubovac Amar
-•	Serdareviæ Ahmed
+*	Kusur Alija
+*	Loziæ Anes
+*	Lubovac Amar
+*	Serdareviæ Ahmed
 
 Opis teme
 
