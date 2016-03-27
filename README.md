@@ -2,6 +2,7 @@
 **Elektortehnièki fakultet**
 
 **Objektno orijentisna analiza i dizajn**
+
 **Projekat: Policijska stanica**
 
 Tim: CetiriA 
