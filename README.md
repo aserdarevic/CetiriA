@@ -1,12 +1,12 @@
-**Univerzitet u Sarajevu 
-Elektortehnièki fakultet
+**Univerzitet u Sarajevu**
+**Elektortehnièki fakultet**
 
-Objektno orijentisna analiza i dizajn 
-Projekat: Policijska stanica**
+**Objektno orijentisna analiza i dizajn**
+**Projekat: Policijska stanica**
 
 Tim: CetiriA 
 Èlanovi tima: 
-*Kusur Alija 
+* Kusur Alija 
 * Loziæ Anes 
 * Lubovac Amar 
 * Serdareviæ Ahmed
