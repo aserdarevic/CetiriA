@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App14
@@ -21,42 +22,51 @@ namespace App14
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UrediKriminalca : Page
+    public sealed partial class VidiZadatke : Page
     {
-        public UrediKriminalca()
+        public VidiZadatke()
         {
             this.InitializeComponent();
         }
-        int i;
+
+
+
+        private void textBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<Zadatak> l = new List<Zadatak>();
+            int i;
+            string a, b, c, d;
+            l = Sistem.sluzbenici[Sistem.c].DajZadatke();
+            if (l.Count == 0)
+            {
+                var dialog = new MessageDialog("Nemate dodijeljenih zadataka.");
+                dialog.ShowAsync();
+            }
+            else
+            {
+
+                for (i = l.Count - 1; i >= 0; i--)
+                {
+                    a = l[i].DajImeZadatka();
+                    b = l[i].DajLokaciju();
+                    c = l[i].DajOpisZadatka();
+                    d = "Ime zadatka: " + a + "\n" + "Lokacija: " + b + "\n" + "Opis zadatka: " + c + "\n\n\n";
+                    textBox.Text = textBox.Text + d;
+
+                }
+
+
+                var textbox = (TextBox)sender;
+                textbox.IsEnabled = false;
+            }
+
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == "" || textBox1.Text == "")
-            {
-                var dialog = new MessageDialog("Greška! Popunite obavezna polja.");
-                dialog.ShowAsync();
-            }
-
-            else if (Sistem.kriminalci.Count == 0)
-            {
-                var dialog = new MessageDialog("Greška! Baza je prazna");
-                dialog.ShowAsync();
-            }
-
-            else
-            {
-                for (i = 0; i < Sistem.kriminalci.Count; i++)
-                {
-                    if (textBox.Text == Sistem.kriminalci[i].DajIme() && textBox1.Text == Sistem.kriminalci[i].DajPrezime())
-                        Sistem.a = i;
-                }
-                this.Frame.Navigate(typeof(UrediKriminalca2));
-            }
-        }
-
-        private void button_Copy_Click(object sender, RoutedEventArgs e)
-        {
+            textBox.Text = "";
             this.Frame.Navigate(typeof(BlankPage1));
         }
     }
 }
+

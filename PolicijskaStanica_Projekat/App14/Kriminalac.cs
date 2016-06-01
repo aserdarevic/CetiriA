@@ -8,24 +8,48 @@ namespace App14
 {
      public class Kriminalac
     {
-        public string Ime { get; set; }
-        public string Prezime { get; set; }
-        public string DatumRodjena { get; set; }
-        public string Prebivaliste { get; set; }
-        public string JMBG { get; set; }
-        public string BrojLicneKarte { get; set; }
-        public string OpisKrivicnogDjela { get; set; }
+        private string Ime;
+        private string Prezime;
+        private string DatumRodjena;
+        private string Prebivaliste;
+        private string JMBG;
+        private string BrojLicneKarte;
+        private string OpisKrivicnogDjela;
        
 
         public Kriminalac (string ime, string prezime, string datum, string prebivaliste, string jmbg, string karta, string opis)
         {
-            Ime = ime;
+            PostaviIme(ime);
+            PostaviPrezime(prezime);
+            PostaviDatumRodjenja(datum);
+            PostaviPrebivaliste(prebivaliste);
+            PostaviJMBG(jmbg);
+            PostaviBrojLicneKarte(karta);
+            PostaviOpisKrivicnogDjela(opis);
+            /*Ime = ime;
             Prezime = prezime;
             DatumRodjena = datum;
             Prebivaliste = prebivaliste;
             JMBG = jmbg;
             BrojLicneKarte = karta;
-            OpisKrivicnogDjela = opis;
+            OpisKrivicnogDjela = opis;*/
         }
+
+        public string DajIme() { return Ime; }
+        public string DajPrezime() { return Prezime; }
+        public string DajDatumRodjenja() { return DatumRodjena; }
+        public string DajPrebivaliste() { return Prebivaliste; }
+        public string DajJMBG() { return JMBG; }
+        public string DajBrojLicneKarte() { return BrojLicneKarte; }
+        public string DajOpisKrivicnogDjela() { return OpisKrivicnogDjela; }
+
+        public void PostaviIme(string a) { Ime = a; }
+        public void PostaviPrezime(string a) { Prezime = a; }
+        public void PostaviDatumRodjenja(string a) { DatumRodjena = a; }
+        public void PostaviPrebivaliste(string a) { Prebivaliste = a; }
+        public void PostaviJMBG(string a) { JMBG = a; }
+        public void PostaviBrojLicneKarte(string a) { BrojLicneKarte = a; }
+        public void PostaviOpisKrivicnogDjela(string a) { OpisKrivicnogDjela = a; }
+
     }
 }

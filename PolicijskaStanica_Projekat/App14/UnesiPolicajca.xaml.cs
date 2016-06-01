@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -20,31 +21,32 @@ namespace App14
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage2 : Page
+    public sealed partial class UnesiPolicajca : Page
     {
-        public BlankPage2()
+        public UnesiPolicajca()
         {
             this.InitializeComponent();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PrijavaKrivicnogDjela));
+            Sistem.sluzbenici.Add(new SluzbenaOsoba(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text));
+        
+            var dialog = new MessageDialog("Uspješno je dodan novi profil.");
+            dialog.ShowAsync();
+            
         }
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PretragaKriminalaca));
+            if (Sistem.e == 1)
+            {
+                this.Frame.Navigate(typeof(Admin));
+            }
+            else
+                this.Frame.Navigate(typeof(BlankPage1));
         }
 
-        private void button_Copy1_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PretragaSlužbenika));
-        }
+        
     }
 }

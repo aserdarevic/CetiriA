@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Width="750" Height="650">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
@@ -18,7 +18,7 @@
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="42" Margin="58,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="365" Background="#B2FFFFFF" FontSize="22" Foreground="Black"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="46" Margin="58,128,0,0" TextWrapping="Wrap" Text="Lokacija:" VerticalAlignment="Top" Width="483" FontSize="28" Foreground="White"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="46" Margin="58,265,0,0" TextWrapping="Wrap" Text="Opis krivičnog djela:" VerticalAlignment="Top" Width="486" FontSize="28" Foreground="White"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="160" Margin="58,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="534" Background="#B2FFFFFF" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="160" Margin="58,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="626" Background="#B2FFFFFF" FontSize="22" Foreground="Black"/>
         <Button x:Name="button" Content="Prijavi!" HorizontalAlignment="Left" Height="52" Margin="270,525,0,0" VerticalAlignment="Top" Width="212" Background="White" FontSize="30" FontWeight="Bold" Foreground="#FFC30E0E" Click="button_Click"/>
 
     </Grid>

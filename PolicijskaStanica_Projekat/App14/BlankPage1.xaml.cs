@@ -51,5 +51,26 @@ namespace App14
         {
             this.Frame.Navigate(typeof(UrediKriminalca));
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaSlužbenika));
+
+        }
+
+        private void button1_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodjelaZadatka));
+        }
+
+        private void button9_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VidiZadatke));
+        }
+
+        private void button_Copy3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiPolicajca));
+        }
     }
 }

@@ -7,25 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Width="750" Height="650">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
                 <GradientStop Color="#FF071632" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Left" Height="57" Margin="266,502,0,0" VerticalAlignment="Top" Width="251" FontSize="30" Background="#FF705B5B" Foreground="White" Click="button_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="62,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="#FFC5AFAF" Background="White"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="29" Margin="62,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="White"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="28" Margin="62,99,0,0" TextWrapping="Wrap" Text="*Ime:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF7F2F2"/>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Height="28" Margin="62,172,0,0" TextWrapping="Wrap" Text="*Prezime:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF9F2F2"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="28" Margin="62,276,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="#FFC5AFAF" Background="White"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="29" Margin="62,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="White"/>
-        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Height="28" Margin="62,243,0,0" TextWrapping="Wrap" Text="*Username:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF7F2F2"/>
-        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Height="27" Margin="62,316,0,0" TextWrapping="Wrap" Text="*Password:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF9F2F2"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="29" Margin="62,415,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="White"/>
-        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Height="32" Margin="62,386,0,0" TextWrapping="Wrap" Text="Broj značke: (samo za službena lica)" VerticalAlignment="Top" Width="403" FontSize="15" Foreground="#FFF9F2F2"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="74" Margin="272,18,0,0" TextWrapping="Wrap" Text="Registracija" VerticalAlignment="Top" Width="387" Foreground="White" FontSize="48"/>
+        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Left" Height="57" Margin="158,502,0,0" VerticalAlignment="Top" Width="197" FontSize="30" Background="#FF705B5B" Foreground="White" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="28" Margin="254,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="#FFC5AFAF" Background="White"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="29" Margin="254,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="White"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="28" Margin="254,113,0,0" TextWrapping="Wrap" Text="*Ime:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF7F2F2"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Height="28" Margin="254,186,0,0" TextWrapping="Wrap" Text="*Prezime:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF9F2F2"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="28" Margin="254,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="#FFC5AFAF" Background="White"/>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Height="28" Margin="254,257,0,0" TextWrapping="Wrap" Text="*Username:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF7F2F2"/>
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Height="27" Margin="254,330,0,0" TextWrapping="Wrap" Text="*Password:" VerticalAlignment="Top" Width="215" FontSize="15" Foreground="#FFF9F2F2"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="29" Margin="254,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="244" FontSize="15" Foreground="White"/>
+        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Height="32" Margin="254,400,0,0" TextWrapping="Wrap" Text="Broj značke: (samo za službena lica)" VerticalAlignment="Top" Width="241" FontSize="15" Foreground="#FFF9F2F2"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="74" Margin="254,18,0,0" TextWrapping="Wrap" Text="Registracija" VerticalAlignment="Top" Width="387" Foreground="White" FontSize="48"/>
+        <PasswordBox x:Name="textBox3" HorizontalAlignment="Left" Height="24" Margin="254,359,0,0" VerticalAlignment="Top" Width="244"/>
+        <Button x:Name="button_Copy" Content="Nazad" HorizontalAlignment="Left" Height="57" Margin="414,502,0,0" VerticalAlignment="Top" Width="173" FontSize="30" Background="#FF705B5B" Foreground="White" Click="button_Copy_Click"/>
 
     </Grid>
 </Page>

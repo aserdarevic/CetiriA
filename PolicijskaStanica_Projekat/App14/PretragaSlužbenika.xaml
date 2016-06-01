@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App14.PretragaSlužbenika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App14"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Width="750" Height="650">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF071632" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="98" Margin="116,40,0,0" TextWrapping="Wrap" Text="Pretraga službenih lica" VerticalAlignment="Top" Width="543" Foreground="White" FontSize="48"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="99" Margin="135,156,0,0" TextWrapping="Wrap" Text="Unesite podatke za pretragu:" VerticalAlignment="Top" Width="552" Foreground="White" FontSize="36"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="99" Margin="157,252,0,0" TextWrapping="Wrap" Text="Ime:" VerticalAlignment="Top" Width="120" Foreground="White" FontSize="36"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Height="68" Margin="157,379,0,0" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top" Width="150" Foreground="White" FontSize="36"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="57" Margin="325,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="259" FontSize="30"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="56" Margin="326,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontSize="30"/>
+        <Button x:Name="button" Content="Pretraži bazu" HorizontalAlignment="Left" Height="61" Margin="158,476,0,0" VerticalAlignment="Top" Width="205" Background="#FF7C7474" FontSize="30" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Nazad" HorizontalAlignment="Left" Height="61" Margin="458,476,0,0" VerticalAlignment="Top" Width="126" Background="#FF7C7474" FontSize="30" Click="button_Copy_Click"/>
+
+    </Grid>
+</Page>

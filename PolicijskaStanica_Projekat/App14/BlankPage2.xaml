@@ -7,14 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid Width="750" Height="650">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
                 <GradientStop Color="#FF071632" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="button2" Content="Odjavi se" HorizontalAlignment="Left" Height="55" Margin="555,504,0,0" VerticalAlignment="Top" Width="174" FontSize="24" Background="#B2FDFDFD" BorderBrush="#FFFFF9F9" Click="button2_Click" RenderTransformOrigin="0.594,-0.334"/>
+        <Button x:Name="button2" Content="Odjavi se" HorizontalAlignment="Left" Height="55" Margin="522,540,0,0" VerticalAlignment="Top" Width="174" FontSize="24" Background="#B2FDFDFD" BorderBrush="#FFFFF9F9" Click="button2_Click" RenderTransformOrigin="0.594,-0.334"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="82" Margin="55,67,0,0" TextWrapping="Wrap" Text="Prijavljeni ste kao neslužbena osoba" VerticalAlignment="Top" Width="619" Foreground="White" FontSize="36"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="82" Margin="52,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="619" Foreground="White" FontSize="36">
         	<Run Text="Odaberite odgovarajuću opciju"/>
@@ -22,9 +22,9 @@
         	<LineBreak/>
         	<Run/>
         </TextBlock>
-        <Button x:Name="button" Content="Prijavi krivično djelo" HorizontalAlignment="Left" Height="69" Margin="55,214,0,0" VerticalAlignment="Top" Width="305" Background="#B2FBF2F2" FontSize="29" FontWeight="Bold" Foreground="#FFBB0303" Click="button_Click"/>
-        <Button x:Name="button_Copy" Content="Pretraži krivična lica" HorizontalAlignment="Left" Height="69" Margin="55,304,0,0" VerticalAlignment="Top" Width="305" Background="#B2FFFFFF" FontSize="30" Click="button_Copy_Click"/>
-        <Button x:Name="button_Copy1" Content="Pretraži službena lica" HorizontalAlignment="Left" Height="68" Margin="57,395,0,0" VerticalAlignment="Top" Width="305" Background="#B2FFFFFF" FontSize="30"/>
+        <Button x:Name="button" Content="Prijavi krivično djelo" HorizontalAlignment="Left" Height="69" Margin="220,229,0,0" VerticalAlignment="Top" Width="305" Background="#B2FBF2F2" FontSize="29" FontWeight="Bold" Foreground="#FFBB0303" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Pretraži krivična lica" HorizontalAlignment="Left" Height="69" Margin="220,319,0,0" VerticalAlignment="Top" Width="305" Background="#B2FFFFFF" FontSize="30" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="Pretraži službena lica" HorizontalAlignment="Left" Height="68" Margin="222,410,0,0" VerticalAlignment="Top" Width="305" Background="#B2FFFFFF" FontSize="30" Click="button_Copy1_Click"/>
 
     </Grid>
 </Page>

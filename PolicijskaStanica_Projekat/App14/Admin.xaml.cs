@@ -20,31 +20,23 @@ namespace App14
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class BlankPage2 : Page
+    public sealed partial class Admin : Page
     {
-        public BlankPage2()
+        public Admin()
         {
             this.InitializeComponent();
+        }
+
+       
+
+        private void button_Copy3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiPolicajca));
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PrijavaKrivicnogDjela));
-        }
-
-        private void button_Copy_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PretragaKriminalaca));
-        }
-
-        private void button_Copy1_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PretragaSlužbenika));
         }
     }
 }

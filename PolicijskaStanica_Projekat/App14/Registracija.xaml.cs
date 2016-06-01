@@ -30,7 +30,9 @@ namespace App14
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == "" || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            Sistem.e = 0;
+            int k = 0;
+            if (textBox.Text == "" || textBox1.Text == "" || textBox2.Text == "" || textBox3.PasswordChar == "")
             {
                 var dialog = new MessageDialog("Greška! Popunite obavezna polja.");
                 dialog.ShowAsync();
@@ -39,17 +41,42 @@ namespace App14
             {
                 if (textBox4.Text == "")
                 {
-                    Sistem.korisnici.Add(new Gradjanin(textBox.Text, textBox1.Text, textBox2.Text, textBox3.Text));
+                    Sistem.korisnici.Add(new Gradjanin(textBox.Text, textBox1.Text, textBox2.Text, textBox3.PasswordChar));
                     this.Frame.Navigate(typeof(UspjesnaRegistracija2));
                     Sistem.b = Sistem.korisnici.Count-1;
                 }
                 else
                 {
-                    Sistem.korisnici.Add(new SluzbenaOsoba(textBox.Text, textBox1.Text, textBox4.Text, textBox2.Text, textBox3.Text));
-                    Sistem.b = Sistem.korisnici.Count-1;
-                    this.Frame.Navigate(typeof(UspjesnaRegistracija));
+
+                    for (int i=0;i<Sistem.sluzbenici.Count;i++) {
+                        if (Sistem.sluzbenici[i].DajBrojZnacke()==textBox4.Text)
+                        {
+                            Sistem.sluzbenici[i].PostaviUsername(textBox2.Text);
+                            Sistem.sluzbenici[i].PostaviPassword(textBox3.PasswordChar);
+                            k = 1;
+                            Sistem.c = Sistem.sluzbenici.Count - 1;
+                            this.Frame.Navigate(typeof(UspjesnaRegistracija));
+
+                        }
+
+                    }
+
+                   
                 }
+               
+
+                }
+            if (k==0 && textBox4.Text!="")
+            {
+                var dialog = new MessageDialog("Greška! Nevalidan broj značke");
+                dialog.ShowAsync();
             }
             }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
+    
 }

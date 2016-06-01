@@ -30,20 +30,34 @@ namespace App14
 
         private void textBox1_Loaded(object sender, RoutedEventArgs e)
         {
-            textBox1.Text = Sistem.kriminalci[Sistem.a].Ime;
-            textBox2.Text = Sistem.kriminalci[Sistem.a].Prezime;
-            textBox3.Text = Sistem.kriminalci[Sistem.a].DatumRodjena;
-            textBox4.Text = Sistem.kriminalci[Sistem.a].Prebivaliste;
-            textBox5.Text = Sistem.kriminalci[Sistem.a].JMBG;
-            textBox6.Text = Sistem.kriminalci[Sistem.a].BrojLicneKarte;
-            textBox7.Text = Sistem.kriminalci[Sistem.a].OpisKrivicnogDjela;
+            textBox1.Text = Sistem.kriminalci[Sistem.a].DajIme();
+            textBox2.Text = Sistem.kriminalci[Sistem.a].DajPrezime();
+            textBox3.Text = Sistem.kriminalci[Sistem.a].DajDatumRodjenja();
+            textBox4.Text = Sistem.kriminalci[Sistem.a].DajPrebivaliste();
+            textBox5.Text = Sistem.kriminalci[Sistem.a].DajJMBG();
+            textBox6.Text = Sistem.kriminalci[Sistem.a].DajBrojLicneKarte();
+            textBox7.Text = Sistem.kriminalci[Sistem.a].DajOpisKrivicnogDjela();
             var textbox = (TextBox)sender;
             textbox.IsEnabled = false;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            if (Sistem.korisnici.Count != 0)
+            {
+
+                if (Sistem.korisnici[Sistem.b].DajBrojZnacke() == "")
+                {
+
+                    this.Frame.Navigate(typeof(BlankPage2));
+                }
+
+                else
+                {
+                    this.Frame.Navigate(typeof(BlankPage1));
+                }
+            }
+            else this.Frame.Navigate(typeof(BlankPage1));
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -51,10 +65,6 @@ namespace App14
             this.Frame.Navigate(typeof(PretragaKriminalaca));
         }
 
-        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
         private void textBox2_Loaded(object sender, RoutedEventArgs e)
         {
@@ -91,5 +101,6 @@ namespace App14
             var textbox = (TextBox)sender;
             textbox.IsEnabled = false;
         }
+
     }
 }

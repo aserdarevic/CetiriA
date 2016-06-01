@@ -10,10 +10,14 @@ namespace App14
     {
         public Gradjanin(string ime, string prezime, string user, string pass)
         {
-            Ime = ime;
-            Prezime = prezime;
+            PostaviIme(ime);
+            PostaviPrezime(prezime);
+            PostaviUsername(user);
+            PostaviPassword(pass);
+
+            /*Prezime = prezime;
             Username = user;
-            Password = pass;
+            Password = pass;*/
         }
         /*public Gradjanin(string ime, string prezime, string user, string pass) : base(ime, prezime, user, pass)
         {

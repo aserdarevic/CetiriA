@@ -8,10 +8,11 @@ namespace App14
 {
     public abstract class Korisnik
     {
-        public string Ime { get; set; }
-        public string Prezime { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        private string Ime;
+        private string Prezime;
+        private string Username;
+        private string Password;
+        private string DatumRodjenja;
 
         /*public Korisnik (string ime, string prezime, string user, string pass)
         {
@@ -22,6 +23,17 @@ namespace App14
         }*/
 
         abstract public string DajBrojZnacke();
+        public string DajIme () { return Ime; }
+        public string DajPrezime() { return Prezime; }
+        public string DajUsername() { return Username; }
+        public string DajPassword() { return Password; }
+        public string DajDatumRodjenja() { return DatumRodjenja; }
+
+        public void PostaviIme(string a) { Ime = a; }
+        public void PostaviPrezime(string a) { Prezime = a; }
+        public void PostaviUsername(string a) { Username = a; }
+        public void PostaviPassword(string a) { Password = a; }
+        public void PostaviDatumRodjenja(string a) { DatumRodjenja = a; }
     }
     }
 
