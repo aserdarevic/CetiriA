@@ -34,6 +34,7 @@ namespace App14
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            Sistem.c = -1;
             this.Frame.Navigate(typeof(MainPage));
         }
 
@@ -71,6 +72,11 @@ namespace App14
         private void button_Copy3_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(UnesiPolicajca));
+        }
+
+        private void button_Copy3_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PogledajPrijave));
         }
     }
 }

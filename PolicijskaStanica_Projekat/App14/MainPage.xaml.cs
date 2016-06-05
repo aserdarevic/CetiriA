@@ -41,32 +41,42 @@ namespace App14
        
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == "admin" || textBox2.PasswordChar == "admin")
+            //Sistem.korisnici.Add(new Gradjanin("admin", "admin", "admin", "admin"));
+            int p = 0;
+            if (textBox.Text == "admin" ||  textBox2.PasswordChar == "admin")
             {
-                this.Frame.Navigate(typeof(Admin));
                 Sistem.e = 1;
+                Sistem.b = -1;
+                Sistem.c = -1;
+
+                p = 1;
+                this.Frame.Navigate(typeof(Admin));
             }
 
-                /*Sistem.korisnici.Add(new Korisnik("Amar", "Lubovac", "alubovac1","ssarajevo"));
-                Sistem.korisnici.Add(new Korisnik("Alija", "Kusur", "alubovac2", "stuzla"));
-                Sistem.korisnici.Add(new Korisnik("Anes", "Lozic", "alubovac3", "gmostar"));
-                Sistem.korisnici.Add(new Korisnik("Ahmed", "Serdarevic","alubovac4", "gbec"));*/
+            /*Sistem.korisnici.Add(new Korisnik("Amar", "Lubovac", "alubovac1","ssarajevo"));
+            Sistem.korisnici.Add(new Korisnik("Alija", "Kusur", "alubovac2", "stuzla"));
+            Sistem.korisnici.Add(new Korisnik("Anes", "Lozic", "alubovac3", "gmostar"));
+            Sistem.korisnici.Add(new Korisnik("Ahmed", "Serdarevic","alubovac4", "gbec"));*/
 
+            int r = 0;
                 if (textBox.Text=="" || textBox2.PasswordChar=="")
             {
                 var dialog = new MessageDialog("Greška! Popunite obavezna polja. Ukoliko nemate korisnički račun potrebno je da se registrujete.");
                 dialog.ShowAsync();
+                r = 1;
             } 
             
-            int p = 0;
+           
             for (int i = 0; i < Sistem.korisnici.Count; i++)
             {
                 
                 if (Sistem.korisnici[i].DajUsername()==textBox.Text && Sistem.korisnici[i].DajPassword()==textBox2.PasswordChar && Sistem.korisnici[i].DajBrojZnacke()=="")
                 {
                     Sistem.b = i;
-                    this.Frame.Navigate(typeof(BlankPage2));
+                    Sistem.e = 0;
                     p = 1;
+                    this.Frame.Navigate(typeof(BlankPage2));
+                    
                 }
 
             }
@@ -74,27 +84,25 @@ namespace App14
             for (int i = 0; i < Sistem.sluzbenici.Count; i++)
             {
                 if (Sistem.sluzbenici[i].DajUsername() == textBox.Text && Sistem.sluzbenici[i].DajPassword() == textBox2.PasswordChar)
-                {
-                    Sistem.c = i;
-                    this.Frame.Navigate(typeof(BlankPage1));
-                    p = 1;
+                {   
+                   
+                    {
+                        Sistem.c = i;
+                        Sistem.b = -1;
+                        Sistem.e = 0;
+                        p = 1;
+                        this.Frame.Navigate(typeof(BlankPage1));
+                    }
                 }
             }
-            //if (p == 0) this.Frame.Navigate(typeof(Greska));
+
+            if (p == 0 && r!=1)
+            {
+                var dialog = new MessageDialog("Greška! Netačan username ili password.");
+                dialog.ShowAsync();
+            }
 
 
-
-
-
-            //string user = "ammarr96";
-            //string pass = "sarajevo";
-
-            //if (user.Equals(textBox.Text, StringComparison.Ordinal) && pass.Equals(textBox2.Text, StringComparison.Ordinal))
-
-            //this.Frame.Navigate(typeof(BlankPage1));
-
-            //else
-            // this.Frame.Navigate(typeof(BlankPage2));
 
         }
 

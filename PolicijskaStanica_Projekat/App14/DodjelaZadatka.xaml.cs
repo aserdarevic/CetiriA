@@ -76,7 +76,18 @@ namespace App14
 
         private void button_Copy1_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BlankPage1));
+            if (Sistem.e == 1)
+            {
+
+                this.Frame.Navigate(typeof(Admin));
+            }
+
+            else if (Sistem.e != 1 && Sistem.c != -1)
+            {
+                this.Frame.Navigate(typeof(BlankPage2));
+            }
+            else
+                this.Frame.Navigate(typeof(BlankPage1));
         }
     }
 }

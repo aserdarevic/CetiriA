@@ -50,17 +50,17 @@ namespace App14
                     Sistem.d = i;
 
 
-                    if (Sistem.korisnici[Sistem.b].DajBrojZnacke() == "")
+                    if (Sistem.e==1 || Sistem.c!=-1 )
                     {
 
-                        this.Frame.Navigate(typeof(ProfilSluzbenogLica));
+                        this.Frame.Navigate(typeof(ProfilSluzbenogLica2));
 
                     }
                     else
                     {
 
 
-                        this.Frame.Navigate(typeof(ProfilSluzbenogLica2));
+                        this.Frame.Navigate(typeof(ProfilSluzbenogLica));
 
                     }
 
@@ -78,21 +78,23 @@ namespace App14
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            if (Sistem.korisnici.Count != 0)
+
+
+            if (Sistem.e == 1)
             {
 
-                if (Sistem.korisnici[Sistem.b].DajBrojZnacke() == "")
-                {
-
-                    this.Frame.Navigate(typeof(BlankPage2));
-                }
-
-                else
-                {
-                    this.Frame.Navigate(typeof(BlankPage1));
-                }
+                this.Frame.Navigate(typeof(Admin));
             }
-            else this.Frame.Navigate(typeof(BlankPage1));
+
+            else if (Sistem.e != 1 && Sistem.c ==-1)
+            {
+                this.Frame.Navigate(typeof(BlankPage2));
+            }
+            else
+                this.Frame.Navigate(typeof(BlankPage1));
+
+
         }
+
     }
 }

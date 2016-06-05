@@ -37,6 +37,57 @@ namespace App14
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+            Sistem.e = 0;
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodjelaZadatka));
+        }
+
+        private void button9_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodjelaZadatka));
+        }
+
+        private void button1_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiPolicajca));
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaKriminalaca));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaSlužbenika));
+        }
+
+        private void button1_Copy_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiPolicajca));
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PretragaSlužbenika));
+        }
+
+        private void button_Copy6_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PogledajPrijave));
+        }
+
+        private void button_Copy5_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UrediKriminalca));
+        }
+
+        private void button_Copy4_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UnesiKriminalca));
         }
     }
 }

@@ -37,7 +37,7 @@ namespace App14
             textBox4.Text = Sistem.sluzbenici[Sistem.d].DajCin();
             textBox5.Text = Sistem.sluzbenici[Sistem.d].DajRadnuJedinicu();
             textBox6.Text = Sistem.sluzbenici[Sistem.d].DajGodineIskustva().ToString();
-            textBox1.Text = Sistem.sluzbenici[Sistem.d].DajKvalifikacije();
+            textBox7.Text = Sistem.sluzbenici[Sistem.d].DajKvalifikacije();
             var textbox = (TextBox)sender;
             textbox.IsEnabled = false;
         }

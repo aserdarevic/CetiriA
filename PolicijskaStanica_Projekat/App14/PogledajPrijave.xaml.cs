@@ -21,40 +21,14 @@ namespace App14
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UrediKriminalca : Page
+    public sealed partial class PogledajPrijave : Page
     {
-        public UrediKriminalca()
+        public PogledajPrijave()
         {
             this.InitializeComponent();
         }
-        int i;
 
         private void button_Click(object sender, RoutedEventArgs e)
-        {
-            if (textBox.Text == "" || textBox1.Text == "")
-            {
-                var dialog = new MessageDialog("Greška! Popunite obavezna polja.");
-                dialog.ShowAsync();
-            }
-
-            else if (Sistem.kriminalci.Count == 0)
-            {
-                var dialog = new MessageDialog("Greška! Baza je prazna");
-                dialog.ShowAsync();
-            }
-
-            else
-            {
-                for (i = 0; i < Sistem.kriminalci.Count; i++)
-                {
-                    if (textBox.Text == Sistem.kriminalci[i].DajIme() && textBox1.Text == Sistem.kriminalci[i].DajPrezime())
-                        Sistem.a = i;
-                }
-                this.Frame.Navigate(typeof(UrediKriminalca2));
-            }
-        }
-
-        private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
             if (Sistem.e == 1)
             {
@@ -62,6 +36,36 @@ namespace App14
             }
             else
                 this.Frame.Navigate(typeof(BlankPage1));
+        }
+
+        private void textBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            textBox.IsReadOnly = true;
+
+            int i;
+            string a, b, d;
+            if (Sistem.krivicnaDjela.Count == 0)
+            {
+                var dialog = new MessageDialog("Nema prijava.");
+                dialog.ShowAsync();
+            }
+            else
+            {
+
+                for (i = Sistem.krivicnaDjela.Count - 1; i >= 0; i--)
+                {
+                    a = Sistem.krivicnaDjela[i].DajLokaciju();
+                    b = Sistem.krivicnaDjela[i].DajOpis();
+    
+                    d = "Lokacija: " + a + "\n" + "Opis krivičnog djela: " + b + "\n\n\n";
+                    textBox.Text = textBox.Text + d;
+
+                }
+
+                
+  
+            }
+
         }
     }
 }

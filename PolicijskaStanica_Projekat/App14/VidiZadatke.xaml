@@ -23,7 +23,9 @@
             </SplitView.Pane>
         </SplitView>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="229,15,0,0" TextWrapping="Wrap" Text="Pregled zadataka:" VerticalAlignment="Top" Height="54" Width="403" FontSize="36" Foreground="White"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="417" Margin="79,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="583" BorderBrush="White" SelectionHighlightColor="White" Background="White" Loaded="textBox_Loaded"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="417" Margin="79,101,0,0" VerticalAlignment="Top" Width="583" >
+            <TextBox x:Name="textBox"  AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Text="" BorderBrush="White" SelectionHighlightColor="Black" Background="White" Loaded="textBox_Loaded" Height="417" Width="583"/>
+        </ScrollViewer>
         <Button x:Name="button" Content="Nazad" HorizontalAlignment="Left" Height="52" Margin="284,549,0,0" VerticalAlignment="Top" Width="198" Foreground="White" Background="#33AC8282" FontSize="25" Click="button_Click"/>
 
     </Grid>

@@ -14,10 +14,16 @@
                 <GradientStop Color="#FF071632" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="86" Margin="55,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="725" FontSize="36" Foreground="White" Text="Prijavljeni ste kao admin"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="86" Margin="55,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="725" FontSize="36" Foreground="White" Text="Prijavljeni ste kao inspektor"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="67" Margin="55,113,0,0" TextWrapping="Wrap" Text="Odaberite odgovarajuću opciju:" VerticalAlignment="Top" Width="604" FontSize="36" Foreground="White"/>
-        <Button x:Name="button2" Content="Odjavi se" HorizontalAlignment="Left" Height="55" Margin="510,531,0,0" VerticalAlignment="Top" Width="174" FontSize="24" Background="#B2FDFDFD" BorderBrush="#FFFFF9F9" Click="button2_Click" RenderTransformOrigin="0.594,-0.334"/>
-        <Button x:Name="button_Copy3" Content="Dodaj službeno lice" HorizontalAlignment="Left" Height="52" Margin="64,241,0,0" VerticalAlignment="Top" Width="298" Background="#B2FFFFFF" FontSize="30" Click="button_Copy3_Click"/>
+        <Button x:Name="button2" Content="Odjavi se" HorizontalAlignment="Left" Height="55" Margin="513,531,0,0" VerticalAlignment="Top" Width="174" FontSize="24" Background="#B2FDFDFD" BorderBrush="#FFFFF9F9" Click="button2_Click" RenderTransformOrigin="0.594,-0.334"/>
+        <Button x:Name="button" Content="Pretraži krivična lica" HorizontalAlignment="Left" Height="53" Margin="61,204,0,0" VerticalAlignment="Top" Width="300" Background="#B2FFFFFF" FontSize="30" Click="button_Click"/>
+        <Button x:Name="button1" Content="Pretraži službena lica" HorizontalAlignment="Left" Height="55" Margin="391,281,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button1_Click_1"/>
+        <Button x:Name="button_Copy4" Content="Dodaj novi dosije" HorizontalAlignment="Left" Height="53" Margin="61,281,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button_Copy4_Click"/>
+        <Button x:Name="button_Copy5" Content="Uredi dosije" HorizontalAlignment="Left" Height="53" Margin="60,359,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button_Copy5_Click"/>
+        <Button x:Name="button9" Content="Dodijeli zadatak" HorizontalAlignment="Left" Height="52" Margin="391,361,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button9_Click"/>
+        <Button x:Name="button_Copy6" Content="Pogledaj prijave" HorizontalAlignment="Left" Height="53" Margin="390,438,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button_Copy6_Click"/>
+        <Button x:Name="button1_Copy" Content="Dodaj službenika" HorizontalAlignment="Left" Height="55" Margin="391,203,0,0" VerticalAlignment="Top" Width="299" Background="#B2FFFFFF" FontSize="30" Click="button1_Copy_Click_1"/>
 
     </Grid>
 </Page>

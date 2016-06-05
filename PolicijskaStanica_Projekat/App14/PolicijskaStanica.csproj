@@ -126,11 +126,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PogledajPrijave.xaml.cs">
+      <DependentUpon>PogledajPrijave.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PretragaKriminalaca.xaml.cs">
       <DependentUpon>PretragaKriminalaca.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PretragaSluzbenihLica.xaml.cs">
-      <DependentUpon>PretragaSluzbenihLica.xaml</DependentUpon>
     </Compile>
     <Compile Include="PretragaSlužbenika.xaml.cs">
       <DependentUpon>PretragaSlužbenika.xaml</DependentUpon>
@@ -228,11 +228,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PretragaKriminalaca.xaml">
+    <Page Include="PogledajPrijave.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PretragaSluzbenihLica.xaml">
+    <Page Include="PretragaKriminalaca.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

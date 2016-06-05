@@ -30,27 +30,30 @@ namespace App14
         int i = 0;
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text == "" || textBox1.Text == "" && Sistem.kriminalci.Count!=0)
+            if (textBox.Text == "" || textBox1.Text == "" && Sistem.kriminalci.Count != 0)
             {
                 var dialog = new MessageDialog("Greška! Popunite obavezna polja.");
                 dialog.ShowAsync();
             }
 
-            else if (Sistem.kriminalci.Count == 0 )
+            else if (Sistem.kriminalci.Count == 0)
             {
                 var dialog = new MessageDialog("Greška! Baza je prazna");
                 dialog.ShowAsync();
             }
-            for (i = 0; i < Sistem.kriminalci.Count; i++) {
-                
+            for (i = 0; i < Sistem.kriminalci.Count; i++)
+            {
+
 
                 if (textBox.Text == Sistem.kriminalci[i].DajIme() && textBox1.Text == Sistem.kriminalci[i].DajPrezime())
-                { Sistem.a = i;
-              
-                this.Frame.Navigate(typeof(Profil));
+                {
+                    Sistem.a = i;
+
+                    this.Frame.Navigate(typeof(Profil));
                 }
-           
-                else  {
+
+                else
+                {
                     var dialog = new MessageDialog("Tražena osoba se ne nalazi u bazi.");
                     dialog.ShowAsync();
                 }
@@ -59,21 +62,18 @@ namespace App14
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            if (Sistem.korisnici.Count != 0)
+            if (Sistem.e == 1)
             {
 
-                if (Sistem.korisnici[Sistem.b].DajBrojZnacke() == "")
-                {
-
-                    this.Frame.Navigate(typeof(BlankPage2));
-                }
-
-                else
-                {
-                    this.Frame.Navigate(typeof(BlankPage1));
-                }
+                this.Frame.Navigate(typeof(Admin));
             }
-            else this.Frame.Navigate(typeof(BlankPage1));
+
+            else if (Sistem.e != 1 && Sistem.c == -1)
+            {
+                this.Frame.Navigate(typeof(BlankPage2));
+            }
+            else
+                this.Frame.Navigate(typeof(BlankPage1));
         }
     }
 }

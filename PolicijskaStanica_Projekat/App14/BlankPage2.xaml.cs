@@ -30,6 +30,7 @@ namespace App14
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+            Sistem.b = -1;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

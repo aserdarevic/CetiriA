@@ -30,9 +30,14 @@ namespace App14
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-           
-            this.Frame.Navigate(typeof(BlankPage1));
-           
+
+            if (Sistem.e == 1)
+            {
+                this.Frame.Navigate(typeof(Admin));
+            }
+            else
+                this.Frame.Navigate(typeof(BlankPage1));
+
         }
 
         

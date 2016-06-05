@@ -33,6 +33,7 @@ namespace App14
 
         private void textBox_Loaded(object sender, RoutedEventArgs e)
         {
+            textBox.IsReadOnly = true;
             List<Zadatak> l = new List<Zadatak>();
             int i;
             string a, b, c, d;
@@ -55,9 +56,6 @@ namespace App14
 
                 }
 
-
-                var textbox = (TextBox)sender;
-                textbox.IsEnabled = false;
             }
 
         }
@@ -66,6 +64,46 @@ namespace App14
         {
             textBox.Text = "";
             this.Frame.Navigate(typeof(BlankPage1));
+        }
+
+        
+
+     /*  private void scrollBar_Scroll(object sender, ScrollEventArgs e)
+        {
+            nesto.Content = "VScrollBar Value:(OnScroll Event) " + e.NewValue.ToString();
+        }*/
+
+        private void ScrollViewer_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+
+            List<Zadatak> l = new List<Zadatak>();
+            int i;
+            string a, b, c, d;
+            string f = "";
+            l = Sistem.sluzbenici[Sistem.c].DajZadatke();
+            if (l.Count == 0)
+            {
+                var dialog = new MessageDialog("Nemate dodijeljenih zadataka.");
+                dialog.ShowAsync();
+            }
+            else
+            {
+
+                for (i = l.Count - 1; i >= 0; i--)
+                {
+                    a = l[i].DajImeZadatka();
+                    b = l[i].DajLokaciju();
+                    c = l[i].DajOpisZadatka();
+                    d = "Ime zadatka: " + a + "\n" + "Lokacija: " + b + "\n" + "Opis zadatka: " + c + "\n\n\n";
+                    f= f + d;
+
+                    //nesto.Content = f;
+                }
+               
+
+                
+            }
         }
     }
 }

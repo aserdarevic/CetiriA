@@ -28,12 +28,29 @@ namespace App14
             this.InitializeComponent();
         }
 
+        bool IspravanJMBG(string a)
+        {
+            if (a.Count() != 13) return false;
+            for (int i=0; i<13;i++)
+            {
+                if (a[i] < '0' || a[i] > '9') return false;
+            }
+            return true;
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            
             if (textBox1.Text == "" || textBox2.Text == "" || textBox7.Text == "")
             {
                 var dialog = new MessageDialog("Greška! Popunite obavezna polja.");
                 dialog.ShowAsync();
+            }
+            else if (IspravanJMBG(textBox5.Text)==false)
+            {
+                var dialog = new MessageDialog("Greška! Neispravno unesen JMBG");
+                dialog.ShowAsync();
+
             }
             else
             {

@@ -95,7 +95,7 @@ namespace App14
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PretragaSluzbenihLica));
+            this.Frame.Navigate(typeof(PretragaSlužbenika));
         }
     }
 }

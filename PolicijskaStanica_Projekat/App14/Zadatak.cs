@@ -11,6 +11,7 @@ namespace App14
         private string ImeZadatka;
         private string Lokacija;
         private string OpisZadatka;
+        private DateTime Datum;
         
         public void PostaviImeZadatka(string ime) { ImeZadatka = ime; }
         public void PostaviLokaciju(string ime) { Lokacija = ime; }
